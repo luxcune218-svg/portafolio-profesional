@@ -1,0 +1,21 @@
+PAQUETE DE ICONOS PARA PORTAFOLIO
+
+Este paquete contiene un script que descarga los logotipos SVG de las tecnologias mencionadas y los guarda en:
+public/images/tecnologias/
+
+COMO USARLO
+1. Descomprime este paquete dentro de la carpeta principal de tu proyecto Portafolio (donde esta package.json).
+2. Abre la terminal integrada de Visual Studio Code en esa misma carpeta.
+3. Ejecuta este comando:
+
+   powershell -ExecutionPolicy Bypass -File .\descargar-iconos.ps1
+
+4. Al finalizar, revisa la carpeta public/images/tecnologias.
+
+NOTAS
+- Necesitas conexion a Internet para descargar los SVG.
+- Los SVG tienen fondo transparente y se pueden escalar sin perder nitidez.
+- El script intenta obtener primero una version a color de Devicon y, si no esta disponible, intenta Simple Icons.
+- Si un icono no se encuentra, el script lo indica en la terminal.
+- Antigravity puede depender de que el catalogo de Devicon tenga publicada su version; si no se descarga, revisa la linea FALTA en el resultado.
+- Los nombres y logotipos pertenecen a sus respectivos propietarios. Consulta las condiciones de uso de cada marca si publicas el portafolio comercialmente.
